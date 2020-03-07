@@ -1,4 +1,5 @@
-*{ /*---- CSS RESET ----*/
+* {
+  /*---- CSS RESET ----*/
   margin: 0;
   padding: 0;
   border: 0;
@@ -6,24 +7,27 @@
   font: inherit;
   vertical-align: baseline;
 
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
   text-decoration: none;
 }
+a {
+  text-decoration: none;
+  color: #f5f0ed;
+}
 
-a:visited{
+a:visited {
   text-decoration: none;
 }
 
-body{
+body {
   display: flex;
   flex-direction: column;
-  
 }
 
 /*---- NAVEGACION ----*/
 
-#menu{
+#menu {
   z-index: 1;
   position: absolute;
   display: flex;
@@ -33,24 +37,23 @@ body{
   min-width: 100%;
 }
 
-#menu a{
+#menu a {
   text-decoration: none;
 }
 
-
-#menu a:visited{
+#menu a:visited {
   color: #f5f0ed;
 }
 
-nav li{
+nav li {
   list-style: none;
   top: 15px;
   color: #f5f0ed;
   justify-content: flex-end;
-  padding: 20px 10px
+  padding: 20px 10px;
 }
 
-#enlace-menu{
+#enlace-menu {
   position: absolute;
   z-index: 1;
   width: 100px;
@@ -67,20 +70,19 @@ nav li{
 
 /*---- CABECERA ----*/
 
-#logo{
+#logo {
   position: absolute;
   z-index: 1;
   margin: 15px;
 }
 
-.cabecera{
+.cabecera {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
-  
+
   background-image: url(../Imagenes/Fondo1.jpg);
   background-size: cover;
   height: auto;
@@ -90,21 +92,21 @@ nav li{
   width: auto;
 }
 
-.cabecera h1{
+.cabecera h1 {
   font-size: 44px;
   font-weight: bold;
   color: #f5f0ed;
   text-align: center;
 }
 
-.barra{
+.barra {
   width: 30vw;
   border: 2px solid #f5f0ed;
   border-radius: 3px;
   margin: 40px 0;
 }
 
-.cabecera p{
+.cabecera p {
   color: #f5f0ed;
   max-width: 70vw;
   align-items: center;
@@ -114,7 +116,7 @@ nav li{
 
 /*---- MAIN ----*/
 
-main{
+main {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -123,14 +125,14 @@ main{
 
 /*---- ARTICULO 1 ----*/
 
-.art1{
+.art1 {
   position: relative;
   display: flex;
   flex-direction: row;
   height: 350px;
 }
 
-.art1-1{
+.art1-1 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -139,15 +141,15 @@ main{
   width: 50vw;
 }
 
-.art1-1 h2{
+.art1-1 h2 {
   font-size: 28px;
   font-weight: bold;
   text-align: center;
   color: #f5f0ed;
-  margin: 20px 0
+  margin: 20px 0;
 }
 
-.art1-1 p{
+.art1-1 p {
   font-size: 16px;
   color: #f5f0ed;
   max-width: 80%;
@@ -155,7 +157,7 @@ main{
   margin: 20px 0;
 }
 
-.art1-2{
+.art1-2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -164,7 +166,7 @@ main{
   width: 50vw;
 }
 
-.art1-2 h2{
+.art1-2 h2 {
   font-size: 28px;
   font-weight: bold;
   text-align: center;
@@ -172,7 +174,7 @@ main{
   margin: 20px 0;
 }
 
-.art1-2 p{
+.art1-2 p {
   font-size: 16px;
   color: #3c3c3b;
   max-width: 80%;
@@ -180,26 +182,24 @@ main{
   margin: 20px 0;
 }
 
-
 /*---- ARTICULO 2 ----*/
 
-.art2{
+.art2 {
   display: flex;
   flex-direction: column;
   position: relative;
   background-size: cover;
   justify-content: center;
   align-items: center;
-  
+
   background-image: url(../Imagenes/Fondo2.jpg);
   height: auto;
   min-height: 549px;
   background-position: center;
   background-repeat: no-repeat;
-
 }
 
-.art2 h1{
+.art2 h1 {
   font-size: 44px;
   font-weight: bold;
   color: #f5f0ed;
@@ -207,31 +207,28 @@ main{
   margin: 10px 20px;
 }
 
-.art2 p{
+.art2 p {
   color: #f5f0ed;
   text-align: center;
   font-size: 16px;
   width: auto;
 }
 
-.boton{
+.boton {
   margin-top: 40px;
   padding: 10px 20px;
   border: 2px solid;
   border-color: #f5f0ed;
   border-radius: 3px;
-  
 }
-
-
 
 /*---- ARTICULO 3 ----*/
 
-.art3{
+.art3 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  
+
   background-color: #f5f0ed;
   padding: 40px 0;
 }
@@ -239,29 +236,27 @@ main{
 .art3-1,
 .art3-2,
 .art3-3,
-.art3-4{
+.art3-4 {
   max-width: 50vw;
   padding: 30px 15px;
-  
+
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.icono img{
+.icono img {
   width: 173px;
   float: left;
   position: relative;
 }
 
-
-.art3 .descripcion{
+.art3 .descripcion {
   display: flex;
   flex-direction: column;
-  
 }
 
-.art3 h2{
+.art3 h2 {
   font-size: 28px;
   font-weight: bold;
   text-align: left;
@@ -269,31 +264,27 @@ main{
   margin: 0 20px;
 }
 
-.art3 p{
+.art3 p {
   font-size: 16px;
   color: #3c3c3b;
   margin: 20px;
-  
 }
-
-
 
 /*---- ARTICULO 4 ----*/
 
-
-.art4{
+.art4 {
   position: relative;
   display: flex;
   flex-direction: row;
   height: 350px;
 }
 
-.art4-1 a{
+.art4-1 a {
   color: #3c3c3b;
   font-weight: bold;
 }
 
-.art4-1{
+.art4-1 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -302,15 +293,15 @@ main{
   width: 50vw;
 }
 
-.art4-1 h2{
+.art4-1 h2 {
   font-size: 28px;
   font-weight: bold;
   text-align: center;
   color: #3c3c3b;
-  margin: 20px 0
+  margin: 20px 0;
 }
 
-.art4-1 p{
+.art4-1 p {
   font-size: 16px;
   color: #3c3c3b;
   max-width: 80%;
@@ -318,7 +309,7 @@ main{
   margin: 20px 0;
 }
 
-.art4-2{
+.art4-2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -327,13 +318,12 @@ main{
   width: 50vw;
 }
 
-
-.art4-2 a{
+.art4-2 a {
   color: #f5f0ed;
   font-weight: bold;
 }
 
-.art4-2 h2{
+.art4-2 h2 {
   font-size: 28px;
   font-weight: bold;
   text-align: center;
@@ -341,7 +331,7 @@ main{
   margin: 20px 0;
 }
 
-.art4-2 p{
+.art4-2 p {
   font-size: 16px;
   color: #f5f0ed;
   max-width: 80%;
@@ -349,51 +339,44 @@ main{
   margin: 20px 0;
 }
 
-
 /*---- FOOTER ----*/
 
-
-footer{
+footer {
   background-color: #241d1b;
   height: 100px;
   width: 100vw;
 }
-  
-footer p{
+
+footer p {
   color: #f5f0ed;
   height: auto;
   width: auto;
   padding: 40px 0 0 30px;
 }
 
-  
-  
 /*---- MEDIA QUERIES ----*/
 
-@media screen and (max-width: 999px){
-  .art3{
+@media screen and (max-width: 999px) {
+  .art3 {
     display: block;
   }
-  
+
   .art3-1,
   .art3-2,
   .art3-3,
-  .art3-4{
-    min-width: 100vw;  
+  .art3-4 {
+    min-width: 100vw;
   }
 }
 
-
-@media screen and (min-width: 700px){
-  
-  #enlace-menu{
+@media screen and (min-width: 700px) {
+  #enlace-menu {
     display: none;
   }
 }
 
-
-@media screen and (max-width: 699px){
-  #menu{
+@media screen and (max-width: 699px) {
+  #menu {
     flex-direction: column;
     align-items: flex-end;
     width: auto;
@@ -403,42 +386,46 @@ footer p{
     background-color: #d03b40;
     border-radius: 10px;
   }
-  
-  
-  
-  .js .navegacion.menu-desplegado{
-    max-height: 400px;
+
+  .navegacion {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s ease-out;
   }
-  
+
+  .navegacion.menu-desplegado {
+    max-height: 400px;
+    transition: max-height 0.8s ease-out;
+  }
+
   .art1,
-  .art4{
+  .art4 {
     flex-direction: column;
     height: 600px;
   }
-  
+
   .art1-1,
   .art1-2,
   .art4-1,
-  .art4-2{
+  .art4-2 {
     width: 100vw;
     height: 300px;
   }
-  
-  .icono img{
+
+  .icono img {
     float: none;
   }
-  
+
   .art3-1,
   .art3-2,
   .art3-3,
-  .art3-4{
+  .art3-4 {
     flex-direction: column;
     padding: 5px;
   }
-  
+
   .art3 h2,
-  .art3 p{
+  .art3 p {
     text-align: center;
   }
-
 }
